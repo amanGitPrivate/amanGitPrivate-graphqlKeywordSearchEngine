@@ -1,0 +1,54 @@
+
+.keyword-button-container {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+    word-wrap: break-word;
+}
+
+.keywords {
+	margin: 0px 5px 0px 0px;
+}
+
+.remove-keyword {
+	padding: 2px;
+	border-radius: 5px;
+	border: none;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	background-color: #ebebeb;
+	outline: none;
+	margin-left: 5px;
+}
+
+.input-keywords {
+    background-color: #e8eeef;
+    border: 0;
+    border-radius: 4px;
+    color: #8a97a0;
+    font-size: 15px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+}
+.add-keyword, .delete-keyword  {
+    padding: 10px;
+	border-radius: 5px;
+	border: none;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	background-color: #ebebeb;
+	outline: none;
+	margin-left: 5px;
+}
+.add-keyword:disabled  {
+	cursor: auto;
+}
+
+.keywords:not(:first-child):before {
+	content: ", ";
+  }
